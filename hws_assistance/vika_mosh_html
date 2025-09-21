@@ -1,0 +1,141 @@
+<!doctype html>
+
+<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
+
+<html>
+
+<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+
+	<head>
+		<title>Личная страница Вики Мошкович</title>
+	 	<!-- Required meta tags -->
+	 	<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Личная страница и контакты">
+
+		<!-- Bootstrap Core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+
+	</head>
+	
+<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
+	<body>
+
+<!-- меню (navigation bar) -->
+
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+
+<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html">Страница курса</a> </li> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_2.html">Страница группы</a> </li> 
+<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+
+<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
+
+		<header style="background-color:thistle; padding-top:80px; "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-4">
+						<br><br>
+<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
+						<h1 style="font-size:300%; font-family: 'Georgia'"><b><i>Вика Мошкович</i></b></h1>
+						<hr> <!-- это горизонтальная линия -->
+						<p style="font-size:150%; font-family: 'Georgia'"> — geek chick</p> 
+					</div>
+					<div class="col-md-4">
+<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
+<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
+<img src="mywebpage/IMG_6042.jpg" style="height:320px; margin:10px 20px 70px 20px; " >
+					</div>
+					
+				</div>
+			</div>
+		</header>
+
+<!-- часть страницы, которая под шапкой -->
+		<section style="background-color:white; padding-top:20px; "id="portfolio">
+			<div class="container">
+
+<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
+				<div class="col-md-4">
+
+<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
+					<article style="background-color:lavender; padding-top:1px; ">
+						<h3 style="font-size:200%; font-family: 'Georgia'; color:thistle"><b><i>Место учебы</i></b></h3>
+						<p style="font-size:120%; font-family: 'Georgia'">Взрослой Виктории: ФиКЛ, НИУ ВШЭ, Москва <br>
+						Малютки Мош: лучший в мире лицей 23, Подольск, от звонка до звонка</p>
+					</article>
+					
+				</div>
+
+				<div class="col-md-4">
+					<article style="background-color:thistle; padding-top:1px;">
+						<h3 style="font-size:200%; font-family: 'Georgia'; color:lavender"><b><i>Родной город</i></b></h3>
+						<p style="font-size:120%; font-family: 'Georgia'">Подольск — столица мира и место съёмки Молодёжки<br>
+						
+						Проведу экскурсию, недорого, звоните 89296455466</p>
+					</article>
+				</div>
+
+				<div class="col-md-4">
+					<article style="background-color:lavender; padding-top:1px; ">
+						<h3 style="font-size:200%; font-family: 'Georgia'; color:thistle"><b><i>Я в соцсетях</i></b></h3>
+<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
+						<ul>
+							<li style="font-size:120%; font-family: 'Georgia'"> хроники моей жизни + детские кринжовые фотки <a href="https://vk.com/glupymoshkovich">VK</a></li>
+							<li style="font-size:120%; font-family: 'Georgia'"> тут я эстетик герл <a href="https://instagram.com/victoriaa_mosh">inst</a></li>
+							<li style="font-size:120%; font-family: 'Georgia'">написать мне можно в <a href="https://t.me/vmosh">tg</a></li>
+						</ul>
+					</article>
+				</div>
+			</div>
+		</section>
+		
+		<section style="background-color:lavender; padding-top:20px; "id="portfolio">
+			<div class="container">
+				
+					<article>
+						<h3 style="font-size:200%; font-family: 'Georgia'"><b><i>Топ-10 фактов обо мне</i></b></h3>
+						<p style="font-size:110%; font-family: 'Georgia'">1.У меня 5 дипломов всероса: 1 побед по русскому и по 2 призера по русскому и английскому <br>
+						2. С 8 класса я больше известна как Вика Мош <br>
+						3. Я преподаю с 15 лет: в 10-11 классе вела олимпиадный кружок по русскому в своей школе, теперь тренер сборной МО,<br>
+						еще работаю в онлайн-школе "Кирилл и Мефодий"<br>
+						4. У меня есть родная старшая сестра Юля! Она старше меня на 15 лет, но выглядит моложе меня))<br>
+						а её дочку Таю я развлекаю со своих 8 лет <br>
+						5. Я занимаюсь хип-хопом 10 лет, состояла в командах Lil Scream, Soul Scream и B-fly Effect<br>
+						6. Знаю всю русскую попсу и шансон, и мне не стыдно!<br>
+						7. Была в Сириусе 2 раза: на лингвистике в 2022 и на лит.творчестве в 2023 и реально проводила экскурсию по Подольску своим соседкам!<br>
+						8. Обожаю СТСные сериалы, нтвшного Глухаря, ситкомы: Друзья, Клиника, Теория Большого взрыва и Как я встретил вашу маму<br>
+						9. В ~4 года мечтала выйти замуж за Диму Билана<br>
+						10. В детстве меня называли черепашкой<br>
+						
+						
+						
+				
+						</p>
+					</article>
+				
+		</section>
+
+<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
+		<footer class="bs-docs-footer"> 
+			<div class="container"> 
+				<p style="text-align:right; ">&copy; В.В. Мошкович, 2025</p> 
+			</div>
+		</footer>
+	</body>
+
+</html>
+
