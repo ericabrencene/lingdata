@@ -1,0 +1,140 @@
+<!doctype html>
+
+<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
+
+<html>
+
+<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+
+	<head>
+		<title>Личная страница Алины Абдулловой</title>
+	 	<!-- Required meta tags -->
+	 	<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Личная страница и контакты">
+
+		<!-- Bootstrap Core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+	<style>
+		h1 {color: #ffcc99}
+		h2 {color: #ffcc99}
+		p {color: #ffcc99}
+		h3 {color: #ffcc99}
+		h4 {color: #ffcc99}
+		li {color: #ffcc99}
+	</style>
+	</head>
+	
+<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
+	<body>
+		
+
+<!-- меню (navigation bar) -->
+
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom" style=" background-color: #781f19;">
+
+<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" class="navbar-brand" style="color: #ffcc99;">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html" style="color: #ffcc99;">Страница курса</a> </li> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_2.html" style="color: #ffcc99;">Страница группы</a> </li> 
+<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+
+<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
+
+		<header style="background-image: url('bbckg.jpg'); padding-top:100px; background-repeat: no-repeat; background-size: cover "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-4" style="position: relative; left: 180px;">
+						<br><br>
+<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
+						<h1>Алина Абдуллова</h1>
+						<hr> <!-- это горизонтальная линия -->
+						<h4 align="center">Всё, что ни делается - всё к лучшему</h4>
+						<p align="right">Готфрид Вильгельм Лейбниц </p> 
+					</div>
+					<div class="col-md-4">
+<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
+<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
+<img src="meee.jpg" style="height:330px; margin:10px 20px 40px 300px; border-radius: 30px;" >
+					</div>
+				</div>
+			</div>
+		</header>
+
+<!-- часть страницы, которая под шапкой -->
+		<section id="portfolio" style="background-color:#00004d">
+			<div class="container">
+
+<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
+				<div class="col-md-3" style="background-color: #ffcc99; margin: 30px 20px; padding: 20px 20px; border-radius: 30px;">
+
+<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
+					<article>
+						<h3 style="margin-top: 0; color: #781f19;">Место учебы</h3>
+						<p  style="color: #781f19;">Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва. А пришла сюда из лицея научно-инженерного профиля :)</p>
+					</article>
+				</div>
+				<div class="col-md-3" style="background-color: #781f19; margin: 30px 60px 30px; padding: 20px 20px; border-radius: 30px;">	
+					<article>
+						<h3 style="margin-top: 0;">Родной город</h3>
+						<p>Королёв - космическая столица России. У нас тут и ЦУП, и РКК "Энергия", и торговые центры с тематическими названиями</p>
+					</article>
+				</div>
+				<div class="col-md-3" style="background-color: #ffcc99; margin: 30px 20px; padding: 20px 20px; border-radius: 30px;">	
+					<article>
+						<h3 style="margin-top: 0; color: #781f19;">Пейте магний!</h3>
+<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
+						<p  style="color: #781f19;">У меня есть <a href="https://t.me/+sqGXtMf8LtExZGJi">милый тгк</a>. Там много танцулек и моей жизни в целом. <br><a href="https://vk.com/alin4ick">Это</a> мой VK, но в разы чаще я отвечаю в <a href="https://t.me/aamtat">телеграме</a>.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+		
+		
+		<section id="persinfo" style="background-color:#00004d;">
+			<div class="container">
+			<div class="col-md-9" align="left">
+					<article>
+						<h2>Малость обо мне</h2>
+						<ul>
+							<li style="margin-top: 10px;"> В восьмом классе думала, что стану физиком. В итоге в своем же техническом лицее познакомилась с лингвистикой - и что-то пошло не так. Ни о чем не жалею и на ФИКЛ'е чувствую себя как никогда на своем месте. Кстати, ЛНИП каждый год входит в топ 50 лучших школ России, в 2025 - 31 место по России и 3(!!!) по МО.
+							</li>
+							
+							<li style="margin-top: 10px;">Немножко умею программировать на С++, а еще знакомилась с С# и HTML c CSS. Планировала никогда в своей жизни к верстке сайтов не возвращаться, нооо.. это моя HTML страничка) </li>
+							
+							<li style="margin-top: 10px;">  Я танцор современной хореографии (contemporary dance). Это направление предполагает свободу движения и постоянный поиск новых форм. Я безумно люблю передавать какую-либо мысль зрителю через хореографию и всегда восхищаюсь, наскоько по-разному эта мысль может быть интерпритирована. Мечтаю сделать лингвозадачу на танец (идея уже есть, верный НИС подобран))))
+							</li>
+							
+							<li style="margin-top: 10px;"> Мой кумир - Виталий Кобзев. Будучи аспирантом физики космоса МГУ, он так же является профессиональным танцовщиком современной хореографии и художественным руководителем Культурного центра МГУ. Его многопрофильность дает надежду, что в жизни необязательно выбирать что-то одно - можно совершенствоваться одновременно в разных направлениях. 
+							</li>
+							
+							<li style="margin-top: 10px; margin-bottom: 20px;"> Пока что мне очень нравится дискра. Я всегда любила математику, а пары проходят довольно мило. Не исключено, что этот пункт впоследствии придется править)
+							</li>
+						</ul>
+					</article>
+				</div>
+				<div class="col-md-3">
+					<img src="shwff.jpg" style="height:330px; margin: 40px 0 15px 25px; border-radius: 30px;" >
+				</div>
+			</div>
+		</section>
+
+<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
+		<footer class="bs-docs-footer" style="position: relative; bottom: 0; background-color: #781f19;"> 
+			<div class="container"> 
+				<p style="text-align:right; ">&copy; А. Абдуллова, 2025</p> 
+			</div>
+		</footer>
+	</body>
+</html>
